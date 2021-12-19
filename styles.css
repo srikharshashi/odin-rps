@@ -1,0 +1,63 @@
+*
+{
+    margin:0px;
+    padding: 0px;
+}
+body
+{
+    margin: 10px;
+
+}
+button
+{
+    height: 50px;
+    width: 80px;
+}
+.header
+{
+    display: flex;
+    justify-content: center;
+}
+ p
+{
+    font-size: 60px;
+}
+.buttons
+{
+    margin: 30px 0px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+.block
+{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    /* width: 900px; */
+    border: 2px solid blue;
+
+}
+.block div
+{
+    width: 50%;
+    border: 2px solid black;
+}
+.bk1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bk1 p
+{
+    margin: 20px;
+}
+.bk2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
