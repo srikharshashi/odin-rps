@@ -66,7 +66,11 @@ function update() {
     const c_scoretag = document.querySelector(".cscore");
     const p_scoretag = document.querySelector(".uscore");
     const round = document.querySelector(".round");
-    
+    round_n++;
+    round.textContent = round_n;
+    c_scoretag.textContent = comp_score;
+    p_scoretag.textContent = user_score;
+
     if (round_n != 5) {
         if (user_score == 5) {
             gamestate.textContent = "You have won";
@@ -83,17 +87,24 @@ function update() {
     else {
         gamestate.textContent = "Game Over";
         if (user_score > comp_score)
+        {
+            gamestate.textContent = "You have won";
             alert("User is winner");
+        }
         else if (user_score == comp_score)
+        {
+            gamestate.textContent = "There was a tie";
+
             alert("Tie");
+
+        }
         else
             alert("computer won");
 
     }
-    round_n++;
-    // console.log(c_scoretag.textContent);
-    round.textContent = round_n;
-    c_scoretag.textContent = comp_score;
-    p_scoretag.textContent = user_score;
+    // round_n++;
+    // round.textContent = round_n;
+    // c_scoretag.textContent = comp_score;
+    // p_scoretag.textContent = user_score;
 
 }
